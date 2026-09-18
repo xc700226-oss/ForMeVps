@@ -1,6 +1,6 @@
-# JP + SG 自建节点 + 原订阅分流规则（整合版）
+# JP + SG + KR 自建节点 + 原订阅分流规则（整合版）
 # 来源：你上传的 RWcxzQDQCzsb.yaml
-# 已删除原机场所有节点，保留自建 JP-Tokyo 与 SG-Singapore。
+# 已删除原机场所有节点，保留自建 JP-Tokyo、SG-Singapore 与 KR-Korea。
 # 分流策略：
 #   PROXY：OpenAI / Google / Telegram / Netflix / Spotify / TikTok / Discord /
 #          Bahamut / Speedtest / GFWList 等
@@ -129,10 +129,25 @@ proxies:
     public-key: dOBMKZvGCDKOltzZEfaZcOazq3HSWDA8DtbGzSmaBm0
     short-id: b8a66a5b05462b93
   client-fingerprint: chrome
+- name: KR-Korea
+  type: vless
+  server: 141.164.43.123
+  port: 443
+  uuid: 174522a8-c6cd-499e-893d-61ab7028bfe9
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: www.apple.com
+  reality-opts:
+    public-key: bibY5V7ZXOfSAWVLtOGW_EwFcRxB35q_d6xZTkh6Bg8
+    short-id: 55e081b89fbda51d
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - KR-Korea
   - SG-Singapore
   - JP-Tokyo
   - DIRECT
