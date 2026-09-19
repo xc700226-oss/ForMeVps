@@ -1,6 +1,6 @@
-# JP + SG + KR + US 自建节点 + 原订阅分流规则（整合版）
+# 新 JP-Tokyo 自建节点 + 原订阅分流规则（整合版）
 # 来源：你上传的 RWcxzQDQCzsb.yaml
-# 已删除原机场所有节点，保留自建 JP-Tokyo、SG-Singapore、KR-Korea 与 US-USA。
+# 旧 JP / SG / KR / US 节点全部作废，仅保留新的 JP-Tokyo。
 # 分流策略：
 #   PROXY：OpenAI / Google / Telegram / Netflix / Spotify / TikTok / Discord /
 #          Bahamut / Speedtest / GFWList 等
@@ -103,67 +103,22 @@ tun:
 proxies:
 - name: JP-Tokyo
   type: vless
-  server: 139.180.198.50
+  server: 64.176.57.45
   port: 443
-  uuid: d9e705da-3f4a-43da-9be2-cb8d5766a671
+  uuid: 9eb7e016-2489-49a2-81e6-c62c89032286
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   servername: www.apple.com
   reality-opts:
-    public-key: CTJZlK_jEEcJLJzLcobHVsZ3ZglVuyHYEF4fOej_yGA
-    short-id: 19a9ec02f0336b03
-  client-fingerprint: chrome
-- name: SG-Singapore
-  type: vless
-  server: 66.42.62.160
-  port: 443
-  uuid: 327ff0ac-b4c7-4785-9d8a-72eba7547eaf
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  servername: www.apple.com
-  reality-opts:
-    public-key: dOBMKZvGCDKOltzZEfaZcOazq3HSWDA8DtbGzSmaBm0
-    short-id: b8a66a5b05462b93
-  client-fingerprint: chrome
-- name: KR-Korea
-  type: vless
-  server: 141.164.43.123
-  port: 443
-  uuid: 174522a8-c6cd-499e-893d-61ab7028bfe9
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  servername: www.apple.com
-  reality-opts:
-    public-key: bibY5V7ZXOfSAWVLtOGW_EwFcRxB35q_d6xZTkh6Bg8
-    short-id: 55e081b89fbda51d
-  client-fingerprint: chrome
-- name: US-USA
-  type: vless
-  server: 144.202.115.237
-  port: 443
-  uuid: 82883e3d-08d2-4003-bcf7-c55f4f64c1c5
-  network: tcp
-  tls: true
-  udp: true
-  flow: xtls-rprx-vision
-  servername: www.apple.com
-  reality-opts:
-    public-key: Zalo_pfYtt_He8j92PPCBoNr86rvGBaug0Lfrxh9SWk
-    short-id: ffff26923d0874ee
+    public-key: LidTH_K90Lebt1Ue6_97GIzM64LQxfzKwadceeZluGQ
+    short-id: 5178028c3c92f6ef
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
-  - US-USA
-  - KR-Korea
-  - SG-Singapore
   - JP-Tokyo
   - DIRECT
 rule-providers:
