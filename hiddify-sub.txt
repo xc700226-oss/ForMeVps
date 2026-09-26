@@ -1,1 +1,1 @@
-vless://9eb7e016-2489-49a2-81e6-c62c89032286@64.176.57.45:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.apple.com&fp=chrome&pbk=LidTH_K90Lebt1Ue6_97GIzM64LQxfzKwadceeZluGQ&sid=5178028c3c92f6ef&type=tcp#JP-Tokyo
+vless://8ce2b658-ee27-466d-a0ec-f031b4d2bd6e@139.180.198.50:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.apple.com&fp=chrome&pbk=SvYupB23L_eFmiEMMUZzXwYTCAeDjm5JywqapbdFWhg&sid=469333d74ed1a5f9&type=tcp#JP-Tokyo
