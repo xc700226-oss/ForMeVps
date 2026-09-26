@@ -103,17 +103,17 @@ tun:
 proxies:
 - name: JP-Tokyo
   type: vless
-  server: 64.176.57.45
+  server: 139.180.198.50
   port: 443
-  uuid: 9eb7e016-2489-49a2-81e6-c62c89032286
+  uuid: 8ce2b658-ee27-466d-a0ec-f031b4d2bd6e
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   servername: www.apple.com
   reality-opts:
-    public-key: LidTH_K90Lebt1Ue6_97GIzM64LQxfzKwadceeZluGQ
-    short-id: 5178028c3c92f6ef
+    public-key: SvYupB23L_eFmiEMMUZzXwYTCAeDjm5JywqapbdFWhg
+    short-id: 469333d74ed1a5f9
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXY
