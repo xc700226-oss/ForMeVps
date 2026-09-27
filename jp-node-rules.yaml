@@ -129,10 +129,25 @@ proxies:
     public-key: n8s-TUnI3Ptm8tJWhwLMRveuLErKpa2y0-JOLSd8Pmk
     short-id: 6c082117f39d6023
   client-fingerprint: chrome
+- name: JP-Tokyo-New
+  type: vless
+  server: 34.180.102.249
+  port: 443
+  uuid: 9cac1380-7676-4370-bb0a-e93a0f4ad504
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  servername: www.apple.com
+  reality-opts:
+    public-key: UBKT8waKao29ejHt7t4AR2-SxWyMQ4koH3bQ_JW1aw0
+    short-id: 543e41d30a8fc77b
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXY
   type: select
   proxies:
+  - JP-Tokyo-New
   - GCP-US
   - JP-Tokyo
   - DIRECT
